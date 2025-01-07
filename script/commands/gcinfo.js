@@ -57,14 +57,14 @@ module.exports.run = async function({ api, event, args }) {
 [🤍] এডমিন: ${qtv} জন 👑
 [🤍] মোট মেসেজ সংখ্যা: ${sl} টি 📝 \n
 [💙] 𝘚𝘵𝘢𝘺 𝘞𝘪𝘵𝘩 𝘛𝘢𝘯𝘷𝘪𝘳 𝘉𝘰𝘵 🥀`,
-        attachment: fs.createReadStream(__dirname + '/cache/1.png')
+        attachment: fs.createReadStream(__dirname + '/system/1.png')
       },
       event.threadID,
-      () => fs.unlinkSync(__dirname + '/cache/1.png'),
+      () => fs.unlinkSync(__dirname + '/system/1.png'),
       event.messageID
     );
   
   return request(encodeURI(`${threadInfo.imageSrc}`))
-    .pipe(fs.createWriteStream(__dirname + '/cache/1.png'))
+    .pipe(fs.createWriteStream(__dirname + '/system/1.png'))
     .on('close', () => callback());
 };
