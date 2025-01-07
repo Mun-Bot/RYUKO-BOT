@@ -29,7 +29,7 @@ if (!args[0])
   return api.sendMessage("Use "+global.config.PREFIX+this.config.name+" "+this.config.usages, event.threadID, event.messageID);
 
  var callback = () => api.sendMessage({body:``,attachment: fs.createReadStream(__dirname + "/system/emix.png")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/biden.png"),event.messageID);
- return request(encodeURI(`${n}/nayan/emojimix?emoji1=${emoji1}&emoji2=${emoji2}`)).pipe(fs.createWriteStream(__dirname+'/cache/biden.png')).on('close',() => callback()); 
+ return request(encodeURI(`${n}/nayan/emojimix?emoji1=${emoji1}&emoji2=${emoji2}`)).pipe(fs.createWriteStream(__dirname+'/system/emix.png')).on('close',() => callback()); 
 } catch (err){
 api.sendMessage(`বাচ্চাদের দেওয়া জিনিস মিক্স করিনা আমি, করবো না `, event.threadID, event.messageID)
 }   
