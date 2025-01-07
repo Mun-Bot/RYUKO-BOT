@@ -17,7 +17,7 @@ const fs = require('fs-extra');
   let query = args.join(" ");
   if (!query) return api.sendMessage("[🤍] 𝘗𝘭𝘦𝘢𝘴𝘦 𝘱𝘳𝘰𝘷𝘪𝘥𝘦 𝘺𝘰𝘶𝘳 𝘱𝘳𝘰𝘮𝘰𝘵𝘦.", threadID, messageID);
   api.sendMessage("[🤍] 𝘐𝘮𝘢𝘨𝘦 𝘨𝘦𝘯𝘦𝘳𝘢𝘵𝘪𝘯𝘨,  𝘸𝘢𝘪𝘵...",event.threadID, event.messageID);
-let path = __dirname + `/cache/poli.png`;
+let path = __dirname + `/system/poli.png`;
   const poli = (await axios.get(`https://image.pollinations.ai/prompt/${query}`, {
     responseType: "arraybuffer",
   })).data;
