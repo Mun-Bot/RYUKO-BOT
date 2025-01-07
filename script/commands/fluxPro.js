@@ -34,7 +34,7 @@ const fs = require('fs-extra');
 
   api.sendMessage("[🤍] 𝘐𝘮𝘢𝘨𝘦 𝘨𝘦𝘯𝘦𝘳𝘢𝘵𝘪𝘯𝘨,  𝘸𝘢𝘪𝘵...",event.threadID, event.messageID);
 
-let path = __dirname + `/cache/fluxpro.png`;
+let path = __dirname + `/system/fluxpro.png`;
 
   const noob143 = (await axios.get(`https://ajiro.gleeze.com/api/FLUX-pro?prompt=${Tanvir143}`, {
 
