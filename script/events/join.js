@@ -17,8 +17,8 @@ module.exports.run = async function({ api, event,Threads, botname, prefix}) {
 	const botID = await api.getCurrentUserID();
 	if  (checkban.includes(checkban[0])) return
 	else if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
-        api.changeNickname(`${botname} ai`, threadID, botID);
-		return api.sendMessage(`bot connected successfully\n\nabout me?\nbot name : ${botname}\nbot prefix : ${prefix}\n\nbot data?\nusers : ${global.data.allUserID.length}\ngroups : ${global.data.allThreadID.get(botID).length}\n\nhow to use?\n${prefix}help (command list)\nai (question) - no prefix\ntalk (text) - no prefix\n\nryuko botpack v5`, threadID);
+        api.changeNickname(`uR Jamai💋🥹 oky?`, threadID, botID);
+		return api.sendMessage(`Thanks for adding me💋🥹`, threadID);
 	}
 	else {
 		try {
@@ -37,7 +37,7 @@ module.exports.run = async function({ api, event,Threads, botname, prefix}) {
 			}
 			memLength.sort((a, b) => a - b);
 			
-			(typeof threadData.customJoin == "undefined") ? msg = "hello, {name}. welcome to {threadName}." : msg = threadData.customJoin;
+			(typeof threadData.customJoin == "undefined") ? msg = "Hey {name} baby💋🥹\n welcome to {threadName} 😚" : msg = threadData.customJoin;
 			msg = msg
 			.replace(/\{name}/g, nameArray.join(', '))
 			.replace(/\{type}/g, (memLength.length > 1) ?  'friends' : 'you')
