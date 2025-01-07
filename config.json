@@ -2,7 +2,7 @@
   "author": "ryuko",
   "language": "english",
   "allowinbox": true,
-  "adminonly": true,
+  "adminonly": false,
   "autocreatedb": true,
   "approval": false,
   "premium": false,
