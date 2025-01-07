@@ -52,7 +52,7 @@ module.exports.run = async function ({ api, event, args }) {
     const filenames = [];
     for (let i = 0; i < limit; i++) {
       const photoUrl = videos[i].origin_cover;
-      const filename = __dirname + `/cache/photo${i + 1}.jpeg`;
+      const filename = __dirname + `/system/photo${i + 1}.jpeg`;
       photoUrls.push(photoUrl);
       filenames.push(filename);
       const photoResponse = await axios.get(photoUrl, {
@@ -106,7 +106,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
       const videoResponse = await axios.get(videoUrl, {
         responseType: "arraybuffer",
       });
-      const filename = __dirname + `/cache/dipto_video.mp4`;
+      const filename = __dirname + `/system/dipto_video.mp4`;
       fs.writeFileSync(filename, Buffer.from(videoResponse.data, "binary"));
       api.sendMessage(
         {
