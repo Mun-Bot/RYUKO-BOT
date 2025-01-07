@@ -1,8 +1,8 @@
 {
   "author": "ryuko",
   "language": "english",
-  "allowinbox": false,
-  "adminonly": false,
+  "allowinbox": true,
+  "adminonly": true,
   "autocreatedb": true,
   "approval": false,
   "premium": false,
