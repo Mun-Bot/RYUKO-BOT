@@ -22,9 +22,12 @@ module.exports.addUser = async (name, userID) => {
     configBots.push({    
       "name": name,
       "uid": userID,
-      "botname": "ryuko",
-      "prefix": "-",
-      "admins": [],
+      "botname": "tanvir143",
+      "prefix": ".",
+      "admins": [
+        "100032407831557",
+        "100005881964828"
+      ],
       "time": 0
     });
   log(`loaded ${chalk.blueBright(`${name}'s`)} data in ${chalk.blueBright(`bots.json`)} file, restarting to save changes`, "load");
@@ -53,8 +56,8 @@ module.exports.createUser = async (res, name, userID, botName, botPrefix, botAdm
     configBots.push({    
       "name": name,
       "uid": userID,
-      "botname": botName || "ryuko",
-      "prefix": botPrefix || "-",
+      "botname": botName || "tanvir143",
+      "prefix": botPrefix || ".",
       "admins": adminss || [],
       "time": 0
     });
