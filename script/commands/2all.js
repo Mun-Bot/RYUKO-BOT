@@ -1,10 +1,9 @@
 module.exports.config = {
     name: "2all",
     version: "1.0.0",
-    hasPermssion: 2,
-    credits: "NoMore",
-    description: "X",
-    commandCategory: "user",
+    permission: 1,
+    category: "user",
+    prefix: true,
     usages: "@mention",
     cooldowns: 20,
     dependencies: {
