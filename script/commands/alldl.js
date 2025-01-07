@@ -42,7 +42,7 @@ module.exports = {
       const { data } = await axios.get(
         `${await baseApiUrl()}/alldl?url=${encodeURIComponent(dipto)}`
       );
-      const filePath = __dirname + `/cache/vid.mp4`;
+      const filePath = __dirname + `/system/vid.mp4`;
       const vid = (
         await axios.get(data.result, { responseType: "arraybuffer" })
       ).data;
@@ -67,7 +67,7 @@ module.exports = {
           responseType: "arraybuffer",
         });
 
-        const filename = __dirname + `/cache/dipto${dipto3}`;
+        const filename = __dirname + `/system/dipto${dipto3}`;
 
         fs.writeFileSync(filename, Buffer.from(response.data, "binary"));
         api.sendMessage(
