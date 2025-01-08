@@ -22,11 +22,11 @@ module.exports.run = async function({ api, event, args, Users }) {
     for (let i = 0; i < qtv2.length; i++) {
         const info = (await api.getUserInfo(qtv2[i].id));
         const name = info[qtv2[i].id].name;
-        listad += '' + `${dem++}` + '. ' + name + '\n';
+        listad += '' + `[🤍] ${dem++}` + '. ' + name + '\n';
     }
 
     api.sendMessage(
-        `list of ${qtv} administrators includes :\n${listad}`,
+        `ADMIN LIST OF ${qtv} GROUP \n\n${listad}`,
         event.threadID,
         event.messageID
     );
