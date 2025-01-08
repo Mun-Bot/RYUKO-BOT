@@ -13,7 +13,7 @@ module.exports.run = async function({ api, event, Users, Threads }) {
 	const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
 	const type = (event.author == event.logMessageData.leftParticipantFbId) ? "baby ta chole gelo💋🥹" : "baby ta re kheye🤤 remove kore dilo🥹";
 	var msg, formPush
-	(typeof data.customLeave == "undefined") ? msg = "Uffs {name}, {type}" : msg = data.customLeave;
+	(typeof data.customLeave == "undefined") ? msg = "areh {name}, \n{type}" : msg = data.customLeave;
 	msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type);
 
 	var formPush = { body: msg }
