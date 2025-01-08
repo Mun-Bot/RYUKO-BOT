@@ -18,7 +18,7 @@ module.exports.run = async function({ api, event,Threads, botname, prefix}) {
 	if  (checkban.includes(checkban[0])) return
 	else if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
         api.changeNickname(`uR Jamai💋🥹 oky?`, threadID, botID);
-		return api.sendMessage(`Thanks for adding me💋🥹`, threadID);
+		return api.sendMessage(`Thanks for adding me baby 💋 🥹`, threadID);
 	}
 	else {
 		try {
@@ -37,7 +37,7 @@ module.exports.run = async function({ api, event,Threads, botname, prefix}) {
 			}
 			memLength.sort((a, b) => a - b);
 			
-			(typeof threadData.customJoin == "undefined") ? msg = "Hey {name} baby💋🥹\n welcome to {threadName} 😚" : msg = threadData.customJoin;
+			(typeof threadData.customJoin == "undefined") ? msg = "Hey {name} baby💋🥹\n welcome to {threadName} " : msg = threadData.customJoin;
 			msg = msg
 			.replace(/\{name}/g, nameArray.join(', '))
 			.replace(/\{type}/g, (memLength.length > 1) ?  'friends' : 'you')
