@@ -1,13 +1,13 @@
 module.exports.config = {
 	name: "kick",
 	version: "1.0.1", 
-	hasPermssion: 1,
+	permission: 1,
 	credits: "Mirai Team",
-  prefix: false,
+        prefix: false,
 	description: "Xoá người bạn cần xoá khỏi nhóm bằng cách tag",
-	commandCategory: "tiện ích", 
+	category: "admin", 
 	usages: "[tag]", 
-	cooldowns: 0,
+	cooldowns: 0
 };
 
 module.exports.languages = {
