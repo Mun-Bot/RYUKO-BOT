@@ -9,10 +9,10 @@ module.exports = async ({ api, event }) => {
     },
     greetings: {
       status: true,
-      morning: `goodmorning everyone, have a nice day.`,
-      afternoon: `goodafternoon everyone, don't forget to eat your lunch.`,
-      evening: `goodevening everyone, don't forget to eat.`,
-      sleep: `goodnight everyone, time to sleep.`,
+      morning: `শুভ সকাল 🤍🥀`,
+      afternoon: `শুভ দুপুর 🏜️🥀`,
+      evening: `শুভ সন্ধা 👀🥀`,
+      sleep: `ঘুমানোর সময়😑 ঘুমিয়ে পড়ো বাচ্চারা`,
       note: 'greetings every morning, afternoon and evening. the timezone is located in Asia/Manila'
     },
     accpetPending: {
@@ -40,19 +40,19 @@ module.exports = async ({ api, event }) => {
       try {
       const nam = [
         {
-          timer: '5:00:00 AM',
+          timer: '7:00:00 AM',
           message: [`${config.morning}`]
         },
         {
-          timer: '11:00:00 AM',
+          timer: '2:00:00 AM',
           message: [`${config.afternoon}`]
         },
         {
-          timer: '6:00:00 PM',
+          timer: '7:00:00 PM',
           message: [`${config.evening}`]
         },
         {
-          timer: '10:00:00 PM',
+          timer: '1:00:00 PM',
           message: [`${config.sleep}`]
         }
       ];
