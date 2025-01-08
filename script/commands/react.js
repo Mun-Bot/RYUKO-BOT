@@ -1,7 +1,7 @@
 module.exports.config = {
 	name: "react",
 	version: "1.0.0",
-	permission: 2,
+	permission: 0,
 	credits: "ryuko",
 	description: "react posts by id",
   prefix: true,
@@ -17,9 +17,9 @@ module.exports.run = async ({ api, event, args }) => {
   const postID = args[0];
   const type = args[1];
   if (!postID || !type) return global.utils.throwError(this.config.name, event.threadID, event.messageID);
-  if (!allType.includes(type)) return api.sendMessage(`the reaction type is not valid, please choose one of the following styles : ${allType.join("/")}`, event.threadID, event.messageID);
+  if (!allType.includes(type)) return api.sendMessage(`এরকম রিয়েক্ট নেই, ব্যবহার করুন: ${allType.join("/")}`, event.threadID, event.messageID);
   api.setPostReaction(Number(postID), type, (err, data) => {
-    if (err) return api.sendMessage("Something went wrong, please check your postID and try again later", event.threadID, event.messageID);
-    api.sendMessage(`dropped emotion ${type} for posts with id ${postID}`, event.threadID, event.messageID);
+    if (err) return api.sendMessage("something wrong,  please check PostID public or custom.", event.threadID, event.messageID);
+    api.sendMessage(`Reacted [ ${type} ] To Your Post.\n\n PostID ${postID}`, event.threadID, event.messageID);
   });
 };
