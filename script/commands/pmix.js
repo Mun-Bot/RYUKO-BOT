@@ -21,7 +21,7 @@ const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN/N
 const n = apis.data.api
  const { threadID, messageID, senderID, body } = event; 
 
-const content = args.join(" ").split(" ").map(item => item = item.trim());
+const content = args.join(" ").split("and").map(item => item = item.trim());
 let emoji1 = content[0]
 let emoji2 = content [1]
   try {
