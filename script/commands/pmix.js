@@ -26,7 +26,8 @@ const content = args.join(" ").split("+").map(item => item = item.trim());
 let emoji1 = content[0]
 let emoji2 = content [1]
 if (!args[0])
-  return api.sendMessage("Use "+global.config.PREFIX+this.config.name+" "+this.config.usages, event.threadID, event.messageID);
+  return api.sendMessage("provide a link1 or link2", event.threadID, event.messageID);
+  api.sendMessage("[🤍] 𝘐𝘮𝘢𝘨𝘦 𝘨𝘦𝘯𝘦𝘳𝘢𝘵𝘪𝘯𝘨,  𝘸𝘢𝘪𝘵...",event.threadID, event.messageID);
 
  var callback = () => api.sendMessage({body:``,attachment: fs.createReadStream(__dirname + "/system/emix.png")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/biden.png"),event.messageID);
  return request(encodeURI(`https://kaiz-apis.gleeze.com/api/faceswap-v2?targetUrl=${emoji2}&sourceUrl=${emoji1}`)).pipe(fs.createWriteStream(__dirname+'/system/emix.png')).on('close',() => callback()); 
