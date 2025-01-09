@@ -4,7 +4,7 @@ module.exports.config = {
   name: "zom",
   category: "image",
   permission: 0,
-  prefix true,
+  prefix: true,
   credits: "Tanvir143",
   author: "Tanvir143"
 };
