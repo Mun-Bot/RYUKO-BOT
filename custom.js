@@ -44,7 +44,7 @@ module.exports = async ({ api, event }) => {
           message: [`${config.morning}`]
         },
         {
-          timer: '2:00:00 AM',
+          timer: '2:00:00 PM',
           message: [`${config.afternoon}`]
         },
         {
@@ -52,7 +52,7 @@ module.exports = async ({ api, event }) => {
           message: [`${config.evening}`]
         },
         {
-          timer: '1:00:00 PM',
+          timer: '1:00:00 AM',
           message: [`${config.sleep}`]
         }
       ];
