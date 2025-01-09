@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "imgmix",
+  name: "2img",
   version: "1.0.1",
   permssion: 2,
   credits: "123 motin",
