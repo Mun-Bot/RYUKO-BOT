@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "pxmix",
+  name: "x",
   version: "1.0.1",
-  permssion: 0,
+  permssion: 2,
   credits: "123 motin",
   prefix: true,
-  description: "Mix emoji",
+  description: "test cmd",
   category: "image",
-  usages: "[emoji1 | emoji2]",
+  usages: "test cmd",
   cooldowns: 0,
   dependencies: {
       "fs-extra": "",
@@ -21,7 +21,7 @@ const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN/N
 const n = apis.data.api
  const { threadID, messageID, senderID, body } = event; 
 
-const content = args.join(" ").split("+").map(item => item = item.trim());
+const content = args.join(" ").split(" ").map(item => item = item.trim());
 let emoji1 = content[0]
 let emoji2 = content [1]
   try {
