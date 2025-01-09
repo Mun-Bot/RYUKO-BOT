@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "all",
+		name: "undefined",
 		version: "1.2",
 		credits: "NTKhang",
 		cooldowns: 5,
