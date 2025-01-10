@@ -45,7 +45,7 @@ module.exports = {
           `[🤍] 𝘛𝘰𝘵𝘢𝘭 𝘙𝘦𝘢𝘤𝘵: ${response.data.heartCount}\n` +
           `[🤍] 𝘛𝘰𝘵𝘢𝘭 𝘝𝘪𝘥𝘦𝘰𝘴: ${response.data.videoCount}\n` +
           `[🤍] 𝘜𝘐𝘋: ${response.data.secUid}\n` +
-          `\n[🤍] 𝘚𝘵𝘢𝘺 𝘞𝘪𝘵𝘩 𝘛𝘢𝘯𝘷𝘪𝘳 𝘉𝘰𝘵 🥀`,
+          `\n[🤍] Stay with mun bot 🥀`,
       };
 
       return api.sendMessage(userInfoMessage, event.threadID);
