@@ -29,7 +29,7 @@ api.sendMessage("𝘤𝘰𝘯𝘷𝘦𝘳𝘵𝘪𝘯𝘨 𝘪𝘮𝘢𝘨𝘦 �
 
 
     api.sendMessage({
-      body: "[🤍] 𝘚𝘵𝘢𝘺 𝘞𝘪𝘵𝘩 𝘛𝘢𝘯𝘷𝘪𝘳 𝘉𝘰𝘵 🥀",
+      body: "[🤍] Stay with Mun bot 🥀",
       attachment: imageStream.data
     }, event.threadID, event.messageID);
 
